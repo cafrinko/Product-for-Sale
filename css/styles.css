@@ -11,7 +11,9 @@ body, html {
 .wrap {
   background: beige;
   width: 600px;
+  height: 1000px;
   overflow: auto;
+  position: relative;
 }
 
 .cf {
@@ -44,6 +46,7 @@ body, html {
 
 .search {
   background: darkgrey;
+  /*width: 10px;*/
 }
 
 .profile {
@@ -54,11 +57,18 @@ body, html {
   background: firebrick;
 }
 
+.moose {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
 .product {
   background: lightpink;
   float: left;
   position: relative;
   padding: 0;
+  margin: 0;
 }
 
 .moosehead {
@@ -68,23 +78,28 @@ body, html {
 
 .productName {
   font-family: monospace;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 20px;
   position: absolute;
-  left: 190px;
-  top: 10px;
+  left: 80px;
+  top: 340px;
 }
 
 .form {
   background: cyan;
   /*padding: 15px;*/
-  width: 400px;
+  width: 375px;
+  /*height: 20px;*/
   font-family: monospace;
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 10px;
   /*float: right;*/
 }
 
 select, input {
   /*position: absolute;*/
-  display: block;
+  display: inline-block;
   border: 2px solid black;
   border-radius: 4px;
   font-family: monospace;
@@ -129,12 +144,14 @@ h4 {
 .gallery {
   height: 300px;
   position: relative;
+  top: 550px;
 }
 
 .galleryPics {
   list-style: none;
   position: absolute;
   left: -20px;
+  /*top: 500px;*/
 }
 
 .galleryPics li {
