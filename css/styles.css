@@ -1,0 +1,58 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: grey;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.wrap {
+  background: beige;
+  width: 500px;
+  overflow: auto;
+}
+
+.cf {
+  clear: both;
+}
+
+.heads {
+  background: orange;
+  float: left;
+}
+
+.navbar {
+  /*position: relative;*/
+}
+
+.navbarRight {
+  background: lightblue;
+  /*position: absolute;*/
+  list-style: none;
+  float: right;
+  padding-top: 5px;
+}
+
+.navbarRight li {
+  /*vertical-align:bottom;*/
+  float: left;
+}
+
+.search {
+  background: darkgrey;
+}
+
+.profile {
+  background: purple;
+}
+
+.basket {
+  background: firebrick;
+}
+
+.product {
+  background: lightpink;
+  padding: 0;
+}
