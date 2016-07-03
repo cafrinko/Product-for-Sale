@@ -1,12 +1,16 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   background: beige;
   /*opacity: 0.6;*/
-}
-
-* {
-  font-family: sans-serif;
 }
 
 .wrap {
@@ -38,10 +42,22 @@ body, html {
   clear: both;
 }
 
+.navbar {
+  /*background: yellow;*/
+  position: relative;
+  padding: 10px;
+  height: auto;
+}
+
 .heads {
   /*background: orange;*/
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 5px;
+  top: 20px;
   float: left;
-  padding-top: 5px;
+  /*padding-top: 5px;*/
 }
 
 .heads:hover {
@@ -49,13 +65,10 @@ body, html {
   cursor: hand;
 }
 
-.navbar {
-  padding: 10px;
-}
-
 .navbarRight {
   /*background: lightblue;*/
   /*padding-bottom: 10px;*/
+  /*position: relative;*/
   padding: 0;
   margin: 0;
   list-style: none;
@@ -70,19 +83,70 @@ body, html {
   padding-top: 5px;
 }
 
+/*input {
+  box-sizing: border-box;
+  border: 1.5px solid #230E0B;
+  border-radius: 2px;
+  font-family: monospace;
+  font-size: 12px;
+  -webkit-appearance: none;
+}*/
+
+input[type=search] {
+  border: 1.5px solid #230E0B;
+  border-radius: 2px;
+  width: 150px;
+  height: 20px;
+  -webkit-appearance: none;
+}
+
+input[type=button] {
+  background: #D1ADA1;
+  color: #230E0B;
+  font-weight: bold;
+  border: double #230E0B;
+  border-radius: 2px;
+  padding: 2px;
+  margin-left: 2px;
+}
+
+input[type=text] {
+  border: 1.5px solid #230E0B;
+  border-radius: 2px;
+  width: 25px;
+  height: 20px;
+  margin-left: 3px;
+  -webkit-appearance: none;
+}
+
 .search {
   /*background: darkgrey;*/
   /*width: 10px;*/
+  position: absolute;
+  left: 300px;
+  top: 15px;
+}
+
+.profile {
+  /*background: purple;*/
+  position: absolute;
+  left: 520px;
+  top: 20px;
 }
 
 .profile:hover {
-  /*background: purple;*/
   cursor: pointer;
   cursor: hand;
 }
 
 .basket {
   /*background: firebrick;*/
+  position: absolute;
+  left: 550px;
+  top: 20px;
+}
+
+.basket:hover {
   cursor: pointer;
   cursor: hand;
 }
@@ -126,49 +190,82 @@ body, html {
   /*background: cyan;*/
   /*padding: 15px;*/
   position: absolute;
-  left: 32px;
-  top: 375px;
+  left: 40px;
+  top: 380px;
   width: 370px;
+  /*height: 50px;*/
   /*height: 20px;*/
   font-family: monospace;
-  margin: 0;
-  padding-left: 30px;
-  padding-top: 10px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*padding-left: 0;
+  padding-top: 10px;*/
   /*float: right;*/
 }
 
-select, input, .qty {
+select, input {
   /*position: absolute;*/
   display: inline-block;
   box-sizing: border-box;
-  /*border: 2px solid black;*/
-  border-radius: 4px;
+  border: double #230E0B;
+  border-radius: 2px;
+  color: #230E0B;
+  font-weight: bold;
   font-family: monospace;
+  font-size: 12px;
+  -webkit-appearance: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
+  height: 25px;
+  vertical-align: middle;*/
 }
 
-.qty {
-  width: 20px;
-  /*display: inline-block;
-  margin: 0;*/
+select[name=size] {
+  width: 60px;
+  height: 25px;
+}
+
+select[name=color] {
+  width: 130px;
+  height: 25px;
+}
+
+input, select:hover {
+  cursor: pointer;
+  cursor: cursor;
+}
+
+input[type=search] {
+  cursor: text;
+}
+
+input[type=text] {
+  cursor: text;
+}
+
+span {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 12px;
+  color: #230E0B;
 }
 
 .description {
   /*background: lightblue;*/
   position: absolute;
-  top: 400px;
+  top: 420px;
   left: 25px;
   width: 380px;
-  height: 155px;
+  min-height: 125px;
   text-align: left;
+  display: table-cell;
   vertical-align: middle;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 h4 {
   /*background: magenta;*/
-  padding-top: 18px;
+  padding: 0;
   text-align: center;
   font-family: monospace;
   font-size: 18px;
@@ -179,10 +276,10 @@ h4 {
   /*background: lightgreen;*/
   font-family: monospace;
   width: 350px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: justify;
-  padding-top: 15px;
-  padding-left: 10px;
-  margin: 0;
+  padding: 0;
 }
 
 .gallery {
@@ -228,8 +325,8 @@ h4 {
 }
 
 .rhino {
-  border-right: 1px solid gold;
-  border-left: 1px solid gold;
+  border-right: 1px solid #230E0B;
+  border-left: 1px solid #230E0B;
 }
 
 .rhino::before {
@@ -262,9 +359,4 @@ h4 {
 
 .ram img {
   /*background: white;*/
-}
-
-input:hover {
-  cursor: pointer;
-  cursor: hand;
 }
