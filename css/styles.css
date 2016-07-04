@@ -295,11 +295,6 @@ h4 {
   position: relative;
 }
 
-/*.galleryPics li:hover {
-  cursor: pointer;
-  cursor: hand;
-}*/
-
 .galleryPics li:first-child::before {
   /*background: teal;*/
   content: "Cardboard Giraffe Head $75.00";
@@ -311,10 +306,6 @@ h4 {
   left: 25px;
   top: 135px;
   width: 100px;
-}
-
-.giraffe img {
-  /*background: white;*/
 }
 
 .galleryPics li:nth-child(2) {
@@ -335,10 +326,6 @@ h4 {
   width: 100px;
 }
 
-.rhino img {
-  /*background: white;*/
-}
-
 .galleryPics li:last-child::before {
   /*background: purple;*/
   content: "Cardboard Ram Head $70.00";
@@ -350,8 +337,4 @@ h4 {
   left: 25px;
   top: 135px;
   width: 100px;
-}
-
-.ram img {
-  /*background: white;*/
 }
