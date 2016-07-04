@@ -16,7 +16,7 @@ body, html {
 .wrap {
   /*background: beige;*/
   width: 600px;
-  height: 825px;
+  height: 800px;
   overflow: auto;
   display: block;
   position: relative;
@@ -37,16 +37,40 @@ body, html {
   height: 100%;
   z-index: 1;
 }*/
+/*.cf:before, .cf:after {
+  content: "";
+  display: table;
+}*/
 
-.cf {
+.cf:after {
+  content: "";
+  display: table;
   clear: both;
 }
 
+/*.cf {
+  zoom: 1;
+}*/
+
+/*.cf {
+  clear: both;
+}*/
+
+/*.clear {
+  clear: both;
+}*/
+
 .navbar {
-  /*background: yellow;*/
+  background: yellow;
   position: relative;
   padding: 10px;
   height: auto;
+  /*min-height: contain-floats;*/
+  /*overflow: hidden;*/
+}
+
+.navbar:after {
+
 }
 
 .heads {
@@ -119,7 +143,7 @@ input[type=text] {
   -webkit-appearance: none;
 }
 
-.search {
+.navbarRight li:first-child {
   /*background: darkgrey;*/
   /*width: 10px;*/
   position: absolute;
@@ -127,26 +151,26 @@ input[type=text] {
   top: 15px;
 }
 
-.profile {
+.navbarRight li:nth-child(2n) {
   /*background: purple;*/
   position: absolute;
   left: 520px;
   top: 20px;
 }
 
-.profile:hover {
+.navbarRight li:nth-child(2n):hover {
   cursor: pointer;
   cursor: hand;
 }
 
-.basket {
+.navbarRight li:last-child {
   /*background: firebrick;*/
   position: absolute;
   left: 550px;
   top: 20px;
 }
 
-.basket:hover {
+.navbarRight li:last-child:hover {
   cursor: pointer;
   cursor: hand;
 }
@@ -306,7 +330,7 @@ h4 {
   cursor: hand;
 }
 
-.giraffe::before {
+.galleryPics li:first-child::before {
   /*background: teal;*/
   content: "Cardboard Giraffe Head $75.00";
   font-family: monospace;
@@ -320,16 +344,21 @@ h4 {
 
 .giraffe img {
   /*background: white;*/
-  position: absolute:
-  left: 10px;
+  /*position: absolute:
+  left: 10px;*/
 }
 
-.rhino {
+.galleryPics li:nth-child(2n) {
   border-right: 1px solid #230E0B;
   border-left: 1px solid #230E0B;
 }
 
-.rhino::before {
+/*.rhino img {
+  position: absolute;
+  left
+}*/
+
+.galleryPics li:nth-child(2n)::before {
   /*background: orange;*/
   content: "Cardboard Rhino Head $75.00";
   font-family: monospace;
@@ -345,7 +374,7 @@ h4 {
   /*background: white;*/
 }
 
-.ram::before {
+.galleryPics li:last-child::before {
   /*background: purple;*/
   content: "Cardboard Ram Head $70.00";
   font-family: monospace;
