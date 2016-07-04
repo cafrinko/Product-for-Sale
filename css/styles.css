@@ -278,7 +278,7 @@ span {
   /*background: lightblue;*/
   position: absolute;
   top: 420px;
-  left: 25px;
+  left: 35px;
   width: 380px;
   min-height: 125px;
   text-align: left;
@@ -307,7 +307,7 @@ h4 {
 }
 
 .gallery {
-  background: lightpink;
+  /*background: lightpink;*/
   position: relative;
   top: 575px;
   left: 25px;
@@ -316,12 +316,12 @@ h4 {
 }
 
 .galleryPics {
-  background: orange;
+  /*background: orange;*/
   list-style: none;
   height: 190px;
   position: absolute;
-  /*left: -20px;
-  top: 40px;*/
+  left: -25px;
+  /*top: 40px;*/
 }
 
 .galleryPics li {
