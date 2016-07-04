@@ -9,7 +9,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: beige;
+  background: #CEC1B9;
   /*opacity: 0.6;*/
 }
 
@@ -44,7 +44,7 @@ body, html {
 
 .cf:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
 }
 
@@ -56,7 +56,7 @@ body, html {
   clear: both;
 }*/
 
-/*.clear {
+/*.clearfix {
   clear: both;
 }*/
 
@@ -64,13 +64,9 @@ body, html {
   /*background: yellow;*/
   position: relative;
   padding: 10px;
-  height: auto;
+  /*height: auto;*/
   /*min-height: contain-floats;*/
   /*overflow: hidden;*/
-}
-
-.navbar:after {
-
 }
 
 .heads {
@@ -349,8 +345,8 @@ h4 {
 }
 
 /*.galleryPics li:first-child {
-  position: relative;
-}*/
+  position: relative
+  }*/
 
 .giraffe img {
   /*background: white;*/
