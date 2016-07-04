@@ -61,7 +61,7 @@ body, html {
 }*/
 
 .navbar {
-  background: yellow;
+  /*background: yellow;*/
   position: relative;
   padding: 10px;
   height: auto;
@@ -310,7 +310,7 @@ h4 {
   /*background: lightpink;*/
   position: relative;
   top: 575px;
-  left: 25px;
+  /*left: 25px;*/
   margin: 0;
   padding: 0;
 }
@@ -318,15 +318,16 @@ h4 {
 .galleryPics {
   /*background: orange;*/
   list-style: none;
-  height: 190px;
+  /*height: 190px;*/
   position: absolute;
-  left: -25px;
+  /*left: -25px;*/
   /*top: 40px;*/
 }
 
 .galleryPics li {
   float: left;
   padding: 10px;
+  height: 190px;
   position: relative;
 }
 
