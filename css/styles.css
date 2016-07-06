@@ -17,7 +17,9 @@ body, html {
   width: 600px;
   height: 800px;
   overflow: auto;
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*display: block;*/
   position: relative;
   /*background-image: url('http://panel.ccsbmx.com/wp-content/uploads/2015/08/Barn-Wood-Paneling-Rustic.jpg');
   opacity: 60%;*/
@@ -37,28 +39,11 @@ body, html {
   z-index: 1;
 }*/
 
-/*.cf:before, .cf:after {
-  content: "";
-  display: table;
-}*/
-
 .cf:after {
   content: "";
   display: block;
   clear: both;
 }
-
-/*.cf {
-  zoom: 1;
-}*/
-
-/*.cf {
-  clear: both;
-}*/
-
-/*.clearfix {
-  clear: both;
-}*/
 
 .navbar {
   /*background: yellow;*/
@@ -70,11 +55,10 @@ body, html {
   /*background: orange;*/
   color: #230E0B
   padding: 0;
-  margin: 0;
-  position: absolute;
-  left: 5px;
-  top: 20px;
   float: left;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 a {
@@ -92,7 +76,7 @@ a {
 
 .navbarRight li {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 5px;
@@ -125,26 +109,26 @@ input[type=text] {
   -webkit-appearance: none;
 }
 
-.navbarRight li:first-child {
-  /*background: darkgrey;*/
+/*.navbarRight li:first-child {
+  background: darkgrey;
   position: absolute;
   left: 300px;
   top: 15px;
 }
 
 .navbarRight li:nth-child(2) {
-  /*background: purple;*/
+  background: purple;
   position: absolute;
   left: 520px;
   top: 20px;
 }
 
 .navbarRight li:last-child {
-  /*background: firebrick;*/
+  background: firebrick;
   position: absolute;
   left: 550px;
   top: 20px;
-}
+}*/
 
 .navbarRight li:last-child:hover {
   cursor: pointer;
@@ -168,6 +152,7 @@ input[type=text] {
 
 .moosehead {
   /*background: yellow;*/
+
   position: absolute;
   left: 30px;
   top: 50px;
